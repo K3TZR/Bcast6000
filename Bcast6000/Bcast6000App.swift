@@ -7,9 +7,19 @@
 
 import SwiftUI
 
+final class AppDelegate: NSObject, NSApplicationDelegate {
+  
+  func applicationShouldTerminateAfterLastWindowClosed(_ sender: NSApplication) -> Bool {
+    true
+  }
+}
+
 @main
 struct Bcast6000App: App {
-    var body: some Scene {
+  @NSApplicationDelegateAdaptor(AppDelegate.self)
+  var appDelegate
+
+  var body: some Scene {
         WindowGroup {
             ContentView()
         }
