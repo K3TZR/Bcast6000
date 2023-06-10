@@ -26,7 +26,7 @@
 		9FF9BE012A32C4D500BEB4D9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		9FF9BE032A32C4D500BEB4D9 /* Bcast6000.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bcast6000.entitlements; sourceTree = "<group>"; };
 		9FF9BE102A32CEEA00BEB4D9 /* Broadcaster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Broadcaster.swift; sourceTree = "<group>"; };
-		9FF9BE162A33EFB200BEB4D9 /* ApiFeatures */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = ApiFeatures; path = ../Packages/ApiFeatures; sourceTree = "<group>"; };
+		9FF9BE182A34077500BEB4D9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,7 +47,7 @@
 		9FF9BDEE2A32C4D400BEB4D9 = {
 			isa = PBXGroup;
 			children = (
-				9FF9BE162A33EFB200BEB4D9 /* ApiFeatures */,
+				9FF9BE182A34077500BEB4D9 /* README.md */,
 				9FF9BDF92A32C4D400BEB4D9 /* Bcast6000 */,
 				9FF9BDF82A32C4D400BEB4D9 /* Products */,
 			);
@@ -303,7 +303,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.Bcast6000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -330,7 +330,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 1.2;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.Bcast6000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
