@@ -39,7 +39,7 @@ public final class Broadcaster: NSObject, ObservableObject {
     Radio(name: "Radio1", payload: [
       "discovery_protocol_version=3.0.0.2",
       "model=FLEX-6500",
-      "serial=1715-4055-6500-9722",
+      "serial=1715-4055-6500-1234",
       "version=3.4.23.15544",
       "nickname=DougsFlex",
       "callsign=K3TZR",
@@ -219,8 +219,8 @@ public final class Broadcaster: NSObject, ObservableObject {
         
         for i in 0..<numberOfRadios {
           if let discoveryPacket = Vita.discovery(payload: radioList[i].payload, sequenceNumber: _sequenceNumber) {
-            sendBroadcast(discoveryPacket, Broadcaster.kBroadcastAddress, _port)
-//          sendBroadcast(discoveryPacket, "192.168.1.211", self._port)
+//            sendBroadcast(discoveryPacket, Broadcaster.kBroadcastAddress, _port)
+          sendBroadcast(discoveryPacket, "192.168.1.201", self._port)
             print( hexDump(discoveryPacket) )
           }
         }

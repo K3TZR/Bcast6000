@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9FDD14362A375E2200E9FD29 /* Udp in Frameworks */ = {isa = PBXBuildFile; productRef = 9FDD14352A375E2200E9FD29 /* Udp */; };
+		9FDD14392A375E4600E9FD29 /* Vita in Frameworks */ = {isa = PBXBuildFile; productRef = 9FDD14382A375E4600E9FD29 /* Vita */; };
+		9FDD143B2A375E5600E9FD29 /* FlexApi in Frameworks */ = {isa = PBXBuildFile; productRef = 9FDD143A2A375E5600E9FD29 /* FlexApi */; };
 		9FF9BDFB2A32C4D400BEB4D9 /* Bcast6000App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9BDFA2A32C4D400BEB4D9 /* Bcast6000App.swift */; };
 		9FF9BDFD2A32C4D400BEB4D9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9BDFC2A32C4D400BEB4D9 /* ContentView.swift */; };
 		9FF9BDFF2A32C4D500BEB4D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF9BDFE2A32C4D500BEB4D9 /* Assets.xcassets */; };
 		9FF9BE022A32C4D500BEB4D9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9FF9BE012A32C4D500BEB4D9 /* Preview Assets.xcassets */; };
-		9FF9BE0B2A32CC0B00BEB4D9 /* FlexApi in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF9BE0A2A32CC0B00BEB4D9 /* FlexApi */; };
-		9FF9BE0D2A32CC0B00BEB4D9 /* Udp in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF9BE0C2A32CC0B00BEB4D9 /* Udp */; };
-		9FF9BE0F2A32CC0B00BEB4D9 /* Vita in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF9BE0E2A32CC0B00BEB4D9 /* Vita */; };
 		9FF9BE112A32CEEA00BEB4D9 /* Broadcaster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FF9BE102A32CEEA00BEB4D9 /* Broadcaster.swift */; };
 		9FF9BE142A32D00800BEB4D9 /* CocoaAsyncSocket in Frameworks */ = {isa = PBXBuildFile; productRef = 9FF9BE132A32D00800BEB4D9 /* CocoaAsyncSocket */; };
 /* End PBXBuildFile section */
@@ -34,22 +34,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9FDD143B2A375E5600E9FD29 /* FlexApi in Frameworks */,
+				9FDD14392A375E4600E9FD29 /* Vita in Frameworks */,
+				9FDD14362A375E2200E9FD29 /* Udp in Frameworks */,
 				9FF9BE142A32D00800BEB4D9 /* CocoaAsyncSocket in Frameworks */,
-				9FF9BE0F2A32CC0B00BEB4D9 /* Vita in Frameworks */,
-				9FF9BE0D2A32CC0B00BEB4D9 /* Udp in Frameworks */,
-				9FF9BE0B2A32CC0B00BEB4D9 /* FlexApi in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9FDD14372A375E4600E9FD29 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9FF9BDEE2A32C4D400BEB4D9 = {
 			isa = PBXGroup;
 			children = (
 				9FF9BE182A34077500BEB4D9 /* README.md */,
 				9FF9BDF92A32C4D400BEB4D9 /* Bcast6000 */,
 				9FF9BDF82A32C4D400BEB4D9 /* Products */,
+				9FDD14372A375E4600E9FD29 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,10 +107,10 @@
 			);
 			name = Bcast6000;
 			packageProductDependencies = (
-				9FF9BE0A2A32CC0B00BEB4D9 /* FlexApi */,
-				9FF9BE0C2A32CC0B00BEB4D9 /* Udp */,
-				9FF9BE0E2A32CC0B00BEB4D9 /* Vita */,
 				9FF9BE132A32D00800BEB4D9 /* CocoaAsyncSocket */,
+				9FDD14352A375E2200E9FD29 /* Udp */,
+				9FDD14382A375E4600E9FD29 /* Vita */,
+				9FDD143A2A375E5600E9FD29 /* FlexApi */,
 			);
 			productName = Bcast6000;
 			productReference = 9FF9BDF72A32C4D400BEB4D9 /* Bcast6000.app */;
@@ -133,8 +141,8 @@
 			);
 			mainGroup = 9FF9BDEE2A32C4D400BEB4D9;
 			packageReferences = (
-				9FF9BE092A32CC0B00BEB4D9 /* XCRemoteSwiftPackageReference "ApiFeatures" */,
 				9FF9BE122A32D00800BEB4D9 /* XCRemoteSwiftPackageReference "CocoaAsyncSocket" */,
+				9FDD14342A375E2200E9FD29 /* XCRemoteSwiftPackageReference "ApiFeatures" */,
 			);
 			productRefGroup = 9FF9BDF82A32C4D400BEB4D9 /* Products */;
 			projectDirPath = "";
@@ -303,7 +311,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.Bcast6000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -330,7 +338,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 1.2;
+				MARKETING_VERSION = 1.3;
 				PRODUCT_BUNDLE_IDENTIFIER = net.k3tzr.Bcast6000;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
@@ -362,7 +370,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		9FF9BE092A32CC0B00BEB4D9 /* XCRemoteSwiftPackageReference "ApiFeatures" */ = {
+		9FDD14342A375E2200E9FD29 /* XCRemoteSwiftPackageReference "ApiFeatures" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/K3TZR/ApiFeatures.git";
 			requirement = {
@@ -381,20 +389,20 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		9FF9BE0A2A32CC0B00BEB4D9 /* FlexApi */ = {
+		9FDD14352A375E2200E9FD29 /* Udp */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FF9BE092A32CC0B00BEB4D9 /* XCRemoteSwiftPackageReference "ApiFeatures" */;
-			productName = FlexApi;
-		};
-		9FF9BE0C2A32CC0B00BEB4D9 /* Udp */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 9FF9BE092A32CC0B00BEB4D9 /* XCRemoteSwiftPackageReference "ApiFeatures" */;
+			package = 9FDD14342A375E2200E9FD29 /* XCRemoteSwiftPackageReference "ApiFeatures" */;
 			productName = Udp;
 		};
-		9FF9BE0E2A32CC0B00BEB4D9 /* Vita */ = {
+		9FDD14382A375E4600E9FD29 /* Vita */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 9FF9BE092A32CC0B00BEB4D9 /* XCRemoteSwiftPackageReference "ApiFeatures" */;
+			package = 9FDD14342A375E2200E9FD29 /* XCRemoteSwiftPackageReference "ApiFeatures" */;
 			productName = Vita;
+		};
+		9FDD143A2A375E5600E9FD29 /* FlexApi */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 9FDD14342A375E2200E9FD29 /* XCRemoteSwiftPackageReference "ApiFeatures" */;
+			productName = FlexApi;
 		};
 		9FF9BE132A32D00800BEB4D9 /* CocoaAsyncSocket */ = {
 			isa = XCSwiftPackageProductDependency;
